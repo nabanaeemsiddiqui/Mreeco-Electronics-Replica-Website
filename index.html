@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MREECO Electronics — a front-end academic recreation.">
+  <title>MREECO Electronics</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="compact-storefront-page">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <div class="utility-bar">
+    <div class="site-container utility-bar__content">
+      <div class="utility-bar__contact">
+        <a href="tel:+923429472107" aria-label="Call MREECO">+92 342 9472107</a>
+        <span aria-hidden="true">|</span>
+        <a href="mailto:mreecoelt@gmail.com">mreecoelt@gmail.com</a>
+      </div>
+      <div class="utility-bar__right">
+        <a href="#site-footer">Need help?</a>
+        <span class="utility-bar__follow">Follow us</span>
+        <div class="social-links social-links--compact" aria-label="Social media links">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">◎</a>
+          <a href="#" aria-label="YouTube">▶</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header" data-site-header>
+    <div class="site-container header-main">
+      <button class="icon-button menu-toggle" type="button" data-menu-toggle aria-controls="mobile-menu" aria-expanded="false" aria-label="Open navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <a class="brand" href="index.html" aria-label="MREECO home">
+        <span class="brand__logo" aria-hidden="true">
+          <img src="images/logo.png" alt="MREECO Electronics logo" loading="eager">
+        </span>
+      </a>
+
+      <form class="header-search" data-header-search>
+        <label class="sr-only" for="homepage-search">Search products</label>
+        <input id="homepage-search" type="search" placeholder="Search...">
+        <label class="sr-only" for="homepage-category">Search category</label>
+        <select id="homepage-category" aria-label="Search category">
+          <option>All categories</option>
+          <option>Arduino</option>
+          <option>Raspberry Pi</option>
+          <option>Sensors &amp; Modules</option>
+          <option>Accessories &amp; Tools</option>
+        </select>
+        <button type="submit" aria-label="Search"><span class="header-search-trigger__icon" aria-hidden="true"></span></button>
+      </form>
+
+      <div class="header-actions">
+        <button class="icon-button mobile-search-toggle" type="button" data-search-open aria-label="Open search"><span class="header-search-trigger__icon" aria-hidden="true"></span></button>
+        <a class="account-link" href="login.html" aria-label="My account">
+          <span class="account-link__icon" aria-hidden="true"></span>
+          <span class="account-link__text">
+            <small>Login / Signup</small>
+            <strong>My account</strong>
+          </span>
+        </a>
+        <button class="cart-button" type="button" data-cart-open aria-haspopup="dialog" aria-label="Open cart, 0 items">
+          <span class="cart-button__icon" aria-hidden="true">
+            <svg viewBox="0 0 110 60" role="img" aria-hidden="true">
+              <path d="M8 20h18l10 22h42l10-22H32" fill="none" stroke="#111" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M22 20L30 8h18" fill="none" stroke="#111" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="32" cy="46" r="6" fill="none" stroke="#111" stroke-width="5"/>
+              <circle cx="78" cy="46" r="6" fill="none" stroke="#111" stroke-width="5"/>
+            </svg>
+          </span>
+          <span class="cart-button__text">Cart</span>
+          <span class="cart-count" aria-label="0 items">0</span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="main-nav" aria-label="Primary navigation">
+      <div class="site-container main-nav__content">
+        <div class="department-menu">
+          <button class="department-menu__trigger" type="button" aria-expanded="false" aria-controls="department-dropdown" data-department-toggle>
+            <span class="department-menu__icon" aria-hidden="true">☰</span> All Departments <span class="chevron" aria-hidden="true"></span>
+          </button>
+          <div class="department-dropdown" id="department-dropdown" data-department-menu>
+          <a href="products.html?category=Arduino">Arduino</a>
+          <a href="products.html?category=Raspberry%20Pi">Raspberry Pi</a>
+          <a href="products.html?category=Sensors%20%26%20Modules">Sensors &amp; Modules</a>
+          <a href="products.html?category=Accessories%20%26%20Tools">Accessories &amp; Tools</a>
+          <a href="products.html?category=Capacitor%2C%20Resistor%2C%20Inductor">Capacitors, Resistors &amp; Inductors</a>
+          <a href="products.html?category=Displays">Displays</a>
+            <a href="products.html">Development Boards</a>
+            <a href="products.html">Power &amp; Batteries</a>
+            <a href="products.html">Measuring Instruments</a>
+          </div>
+        </div>
+        <a href="products.html">Catalog</a>
+        <a href="#site-footer">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" data-mobile-menu aria-hidden="true">
+    <div class="mobile-menu__panel">
+      <div class="mobile-menu__top">
+        <strong>Browse categories</strong>
+        <button class="icon-button close-button" type="button" data-menu-close aria-label="Close navigation menu">×</button>
+      </div>
+      <a href="products.html">All Departments</a>
+      <a href="products.html">Arduino</a>
+      <a href="products.html">Raspberry Pi</a>
+      <a href="products.html">Sensors &amp; Modules</a>
+      <a href="products.html">Accessories &amp; Tools</a>
+      <a href="products.html">Displays</a>
+      <a href="products.html">Products</a>
+      <a href="#site-footer">Contact</a>
+    </div>
+  </div>
+
+  <div class="search-overlay" data-search-overlay aria-hidden="true" role="dialog" aria-modal="true" aria-label="Search products">
+    <div class="search-overlay__backdrop" data-search-close></div>
+    <div class="search-overlay__panel">
+      <div class="search-overlay__header">
+        <h2>Search MREECO</h2>
+        <button class="icon-button close-button" type="button" data-search-close aria-label="Close search">×</button>
+      </div>
+      <form class="search-form" data-search-form>
+        <label class="sr-only" for="site-search">Search products</label>
+        <input id="site-search" type="search" placeholder="Search products, parts &amp; tools" autocomplete="off" data-search-input>
+        <label class="sr-only" for="search-category">Search category</label>
+        <select id="search-category">
+          <option>All categories</option>
+          <option>Arduino</option>
+          <option>Raspberry Pi</option>
+          <option>Sensors &amp; Modules</option>
+          <option>Tools</option>
+        </select>
+        <button class="button button--dark" type="submit">Search</button>
+      </form>
+      <div class="search-overlay__bottom">
+        <button class="text-button" type="button" data-search-clear>Clear search</button>
+        <p data-search-message>Enter a product name or part number to begin.</p>
+      </div>
+    </div>
+  </div>
+
+  <aside class="mini-cart" data-mini-cart aria-hidden="true" aria-label="Shopping cart" role="dialog" aria-modal="true">
+    <div class="mini-cart__backdrop" data-cart-close></div>
+    <section class="mini-cart__panel">
+      <header class="mini-cart__header">
+        <h2>Your cart <span>(0)</span></h2>
+        <button class="icon-button close-button" type="button" data-cart-close aria-label="Close cart">×</button>
+      </header>
+      <div class="empty-cart">
+        <span class="empty-cart__icon" aria-hidden="true"></span>
+        <h3>Your cart is empty</h3>
+        <p>Add electronics essentials to see them here.</p>
+        <a class="button button--dark" href="products.html">Shop our products</a>
+      </div>
+    </section>
+  </aside>
+
+  <main id="main-content">
+    <section class="collections-section section-spacing" aria-labelledby="collections-heading">
+      <div class="site-container">
+        <div class="section-heading">
+          <h1 id="collections-heading">Our collections</h1>
+          <a href="collections.html">View all <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="collection-grid" data-collection-grid></div>
+      </div>
+    </section>
+
+    <section class="product-section section-spacing" aria-labelledby="arduino-heading">
+      <div class="site-container">
+        <div class="section-heading">
+          <h2 id="arduino-heading">Arduino</h2>
+          <a href="products.html?category=Arduino">View all <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="product-grid" data-product-grid="Arduino"></div>
+      </div>
+    </section>
+
+    <section class="product-section product-section--subtle section-spacing" aria-labelledby="raspberry-pi-heading">
+      <div class="site-container">
+        <div class="section-heading">
+          <h2 id="raspberry-pi-heading">Raspberry Pi</h2>
+          <a href="products.html?category=Raspberry%20Pi">View all <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="product-grid" data-product-grid="Raspberry Pi"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="site-footer">
+    <section class="service-assurances">
+      <div class="site-container service-assurances__grid">
+        <article><span class="service-icon">↗</span><div><h2>Free delivery worldwide</h2><p>Free shipping on prepaid orders above Rs. 10,000</p></div></article>
+        <article><span class="service-icon">✓</span><div><h2>Quality assurance</h2><p>Enjoy 100% premium quality products</p></div></article>
+        <article><span class="service-icon">◌</span><div><h2>Top-notch support</h2><p>Monday to Saturday<br>11:00 AM to 8:00 PM</p></div></article>
+        <article><span class="service-icon">▣</span><div><h2>Secure payments</h2><p>100% Secure Payments by Meezan Bank</p></div></article>
+      </div>
+    </section>
+
+    <div class="site-container footer-content">
+      <section class="footer-column footer-about">
+        <a class="brand brand--footer" href="index.html"><span class="brand__name">MREECO</span><span class="brand__tagline">ELECTRONICS</span></a>
+        <p>Electronic components, tools, development boards and related products at appropriate prices.</p>
+        <h2>Got questions? Call us</h2>
+        <a href="tel:+923429472107">(+92) 342-9472107</a>
+      </section>
+      <section class="footer-column">
+        <h2>Contact info</h2>
+        <address>MREECO Electronics<br>Shop #30, Ground Floor Mashallah Center<br>Hall Road, Lahore</address>
+        <a href="mailto:mreecoelt@gmail.com">mreecoelt@gmail.com</a>
+      </section>
+      <section class="footer-column">
+        <h2>Popular collections</h2>
+        <ul><li><a href="products.html">Development Boards</a></li><li><a href="products.html">Components</a></li><li><a href="products.html">Sensors &amp; Modules</a></li><li><a href="products.html">Displays</a></li><li><a href="products.html">Raspberry Pi</a></li></ul>
+      </section>
+      <section class="footer-column">
+        <h2>Information</h2>
+        <ul><li><a href="products.html">Search</a></li><li><a href="#site-footer">Contact us</a></li><li><a href="#">Shipping policy</a></li></ul>
+      </section>
+      <section class="footer-column footer-newsletter">
+        <h2>Newsletter</h2>
+        <p>Receive new-product and project updates.</p>
+        <form data-newsletter-form>
+          <label class="sr-only" for="newsletter-email">Your email</label>
+          <input id="newsletter-email" type="email" placeholder="Your email" required>
+          <button class="button button--dark" type="submit">Subscribe</button>
+          <span class="form-message" data-newsletter-message aria-live="polite"></span>
+        </form>
+      </section>
+    </div>
+    <div class="site-container footer-bottom">
+      <p>© <span data-current-year></span> MREECO — Academic front-end recreation</p>
+      <div class="social-links" aria-label="Social media links"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="YouTube">▶</a><a href="#" aria-label="TikTok">♪</a></div>
+    </div>
+  </footer>
+
+  <a class="whatsapp-button" href="https://wa.me/923429472107?text=Hello%20MREECO%2C%20I%20need%20help%20with%20a%20product." target="_blank" rel="noopener noreferrer" aria-label="Chat with MREECO on WhatsApp">
+    <img src="images/whatsapp-icon.png" alt="">
+    <span>Chat on WhatsApp</span>
+  </a>
+  <script src="js/script.js?v=20260822-6"></script>
+</body>
+</html>
